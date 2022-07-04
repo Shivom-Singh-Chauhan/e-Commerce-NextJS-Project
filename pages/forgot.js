@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Signup = () => {
+const forgot = () => {
   return (
     <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
@@ -12,7 +12,7 @@ const Signup = () => {
             alt="Workflow"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Sign Up to your account
+            Forgot Password
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Or
@@ -22,7 +22,7 @@ const Signup = () => {
                 className="font-medium text-blue-500 hover:text-blue-500"
               >
                 {" "}
-                Login{" "}
+                LogIn{" "}
               </a>
             </Link>
           </p>
@@ -30,20 +30,6 @@ const Signup = () => {
         <form className="mt-8 space-y-6" action="#" method="POST">
           <input type="hidden" name="remember" value="true" />
           <div className="rounded-md shadow-sm -space-y-px">
-            <div>
-              <label htmlFor="Name" className="sr-only">
-                Name
-              </label>
-              <input
-                id="Name"
-                name="Name"
-                type="text"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
-                placeholder="Enter your Name"
-              />
-            </div>
-
             <div>
               <label htmlFor="email-address" className="sr-only">
                 Email address
@@ -58,22 +44,7 @@ const Signup = () => {
                 placeholder="Email address"
               />
             </div>
-            <div>
-              <label htmlFor="password" className="sr-only">
-                Password
-              </label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
-                placeholder="Password"
-              />
-            </div>
           </div>
-
           <div>
             <button
               type="submit"
@@ -94,7 +65,7 @@ const Signup = () => {
                   />
                 </svg>
               </span>
-              Sign in
+              Continue
             </button>
           </div>
         </form>
@@ -102,4 +73,5 @@ const Signup = () => {
     </div>
   );
 };
-export default Signup;
+
+export default forgot;
